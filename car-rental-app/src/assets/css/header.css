@@ -1,0 +1,246 @@
+@import url(./base.css);
+
+
+.header_top {
+    padding: 0.65rem 0;
+    flex-wrap: wrap;
+    background: var(--primary);
+    color: var(--white-pure);
+}
+
+.header_top_left {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.header_top_left:hover {
+    color: var(--secondary);
+}
+
+.header_top_left span {
+    font-size: 0.9rem;
+}
+
+.header_top_help {
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+.header_top_help i {
+    background: var(--white-pure);
+    color: var(--primary);
+    padding: 0.13rem 0.32rem;
+    font-size: 0.7rem;
+    border-radius: 40px;
+    transition: 0.3s ease;
+}
+.header_top_left:hover i {
+    background: var(--secondary);
+    color: var(--white-pure);
+}
+
+.header_top_right a {
+    text-decoration: none;
+    color: var(--white-pure);
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.header_top_right a:hover {
+    color: var(--secondary);
+} 
+
+
+/* -------------------header middle section---------------------- */
+.header_middle {
+    padding: 1.25rem 0;
+}
+ 
+.logo h1 a span {
+    font-size: 1.5rem;
+}
+
+.logo h1 a i {
+    font-size: 2.2rem;
+    color: var(--primary);
+}
+
+.logo h1 a ,
+.header_location_content h4 {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.logo h1,
+.header_location_content h4 {
+    line-height: 1.6rem;
+}
+
+.header_location span i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.header_location_content h6 {
+    font-weight: 600;
+}
+
+.header_btn {
+    background: var(--primary);
+    padding: 0.65rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.header_btn a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 0.4rem;
+    color: var(--white-pure);
+    font-size: 1rem;
+}
+
+.header_btn:hover {
+    background: var(--secondary-dark);
+}
+
+/* ---------------main-navbar----------------- */
+
+.main_navbar {
+    background: var(--primary);
+    padding: 0.95rem 0;
+}
+
+.mobile_menu i {
+    color: var(--white-pure);
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.3s ease;   
+}
+
+.mobile_menu i:hover {
+    color: var(--secondary);       
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 2.8rem;
+}
+
+.nav_item {
+    color: var(--white-pure);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+
+.nav_item:hover {
+    color: var(--secondary-dark);
+}
+
+.search_box {
+     border: 1px solid var(--grey-primary) ;
+     display: flex;
+     align-items: center;
+     border-radius: 6px;
+     background: transparent;
+     cursor: pointer;
+     transition: 0.3s ease;
+}
+
+.search_box:hover {
+    box-shadow: -1px 1px 8px 0 var(--grey-primary);
+}
+
+.search_box input {
+    background: transparent;
+    border: none;
+    outline: 0;
+    color: var(--white-pure);
+    cursor: pointer;
+    padding: 0.44rem 0.75rem;
+}
+
+.search_box span i {
+    color: var(--white-pure);
+    font-size: 1.1rem;
+    padding: 0.44rem 0.75rem;
+    transition: 0.3s ease;
+}
+
+.search_box span i:hover {
+    color: var(--grey-soft);
+}
+
+.nav_active {
+    color: var(--secondary);
+}
+
+@media screen and (max-width:768px) {
+    .header_middle,
+    .nav_right {
+        display: none;
+    }
+    
+    .header_top {
+        border-bottom: 1px solid var(--grey-soft);
+    }
+
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .navigation {
+        background: var(--slider-item-gradient);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        display: none;
+    }
+
+    .menu {
+        width: 250px;
+        height: 100%;
+        background: var(--white-pure);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+    
+    .menu a {
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 0.95rem;
+    }
+
+    .menu_active {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .header_top .row>*{
+        width: 50% !important;
+    }
+}

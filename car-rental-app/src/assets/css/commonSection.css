@@ -1,0 +1,13 @@
+@import url(./base.css);
+
+.common_section {
+    background: var(--slider-item-gradient),url("../images/drive.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

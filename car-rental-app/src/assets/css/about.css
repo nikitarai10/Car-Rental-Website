@@ -1,0 +1,29 @@
+@import url(./base.css);
+
+.section_subtitle {
+  font-size: 1.7rem !important;
+}
+
+.section_help_subtitle {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+    .about_page_content h2 {
+      font-size: 1.55rem !important;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .about_page_img {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .about_page_section,
+    .members_section {
+      padding: 0 1rem;
+    }
+  }

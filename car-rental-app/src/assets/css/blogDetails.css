@@ -1,0 +1,139 @@
+@import url(./base.css);
+
+.blog_details_section {
+  text-align: justify;
+}
+
+.blog_publisher span i {
+    color: var(--secondary);
+}
+
+blockquote {
+    line-height: 1.9rem;
+}
+
+.single_comment img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    object-fit: cover;
+}
+
+span.section_description {
+  font-size: 0.9rem;
+}
+
+.replay i {
+    color: var(--secondary);   
+}
+
+.replay {
+    color: var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form_email_name_holder {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.leave_comment_form input,
+.leave_comment_form textarea {
+  border: 1px solid var(--grey-primary);
+  outline: none !important;
+  border-radius: 4px !important;
+  margin-bottom: 0.3rem;
+  transition: 0.3s;
+}
+
+.leave_comment_form input:focus,
+.leave_comment_form textarea:focus,
+.leave_comment_form input:hover,
+.leave_comment_form textarea:hover  {
+  outline: none;
+  box-shadow: inset 0 0 2px 0 var(--grey-primary) !important;
+}
+
+.blog_comment_btn {
+  background: var(--primary);
+  color:var(--white-pure);
+  outline: none;
+  border: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.blog_comment_btn:hover {
+  background: var(--secondary-dark);
+}
+
+.recent_blog_links h6 a {
+  text-decoration: none;
+  color: var(--primary) !important;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.recent_blog_links span a {
+  text-decoration: none;
+  color: var(--grey-primary);
+  font-size: 0.9rem;
+  display: inline-block;
+  padding-top: 0.35rem;
+  line-height: 1.2rem;
+  transition: 0.3s;
+}
+
+.recent_blog_links a:hover,
+.recent_blog_links h6 a:hover {
+  color: var(--secondary) !important;
+}
+
+  
+  @media only screen and (max-width: 768px) {
+    .blog_details_section {
+      padding: 0 1rem;
+    }
+
+    .recent_post {
+      margin-top: 1.9rem;
+    }
+
+    .leave_comment_form input,
+    .leave_comment_form textarea {
+      font-size: 0.85rem;
+    }
+  
+    .blog_comment_btn {
+      font-size: 0.9rem;
+      margin-bottom: 1.2rem !important;
+    }
+  
+    .leave_comment_form h4 {
+      font-size: 1.2rem;
+    }
+  
+    .single_comment img {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .comment_content p,
+    .blog_details p {
+      font-size: 0.9rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .form_email_name_holder {
+      display: block;
+    }
+
+    .form_email_name_holder input:first-child {
+      margin-bottom: 0.95rem;      
+    }
+  }

@@ -1,0 +1,26 @@
+@import url(./base.css);
+
+.carDetails_section {
+    margin: 4.5rem 0;
+}
+
+.car_features_wrapper {
+    flex-wrap: wrap;
+}
+
+.booking_info,
+.payment_info {
+    color: var(--primary);
+}
+
+@media screen and (max-width:768px) {
+    .car_info_wrapper {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .carDetails_section {
+        padding: 0 1rem;
+    }
+}

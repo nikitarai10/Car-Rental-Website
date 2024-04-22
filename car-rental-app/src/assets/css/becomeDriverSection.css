@@ -1,0 +1,72 @@
+@import url(./base.css);
+
+
+.become_driver {
+    background: var(--slider-item-gradient),url(../images/drive.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.become_driver button {
+    outline: none;
+    border: 0;
+    padding: 0.5rem 1.3rem;
+    border-radius: 4px;
+    color: var(--primary);
+    background: var(--white-pure);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.become_driver button:hover {
+    background: var(--secondary);
+    color: var(--white-pure);
+}
+
+.become_driver_title {
+    font-size: 2.5rem;
+    color: var(--white-pure);
+    line-height: 3.6rem;
+}
+
+@media only screen and (max-width:992px) {
+    
+    .become_driver_title {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .become_driver {
+        padding: 3.15rem 0;
+    }
+
+    .become_driver_title {
+        font-size: 1.45rem;
+        line-height: 2.5rem;
+    }
+
+    .become_driver_btn {
+        font-size: 0.92rem !important;
+    }
+}
+
+@media only screen and (max-width:576px) {
+
+    .become_driver_img {
+        display: none;
+    }
+
+    .become_driver {
+        text-align: center;
+    }
+
+    .becomeDriver_section {
+        margin-top: 3.5rem !important;
+    }
+}
+

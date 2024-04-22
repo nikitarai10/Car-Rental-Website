@@ -1,0 +1,16 @@
+:root{
+    --primary:#000d6b;
+    --primary-mute:#0b1da9;
+    --primary-mute-soft:#08178a;
+    --primary-soft:#6170e5;
+    --primary-dark:#7c8a972f;
+    --primary-dark-soft:#020a4de9;
+    --secondary:#f9a826;
+    --secondary-dark:#e18f0d;
+    --grey-primary:#7c8a97;
+    --grey-soft:#c2ced8;
+    --grey-dark:#57626b;
+    --white-pure:#fff;
+    --slider-item-gradient:linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5));
+    --car-form-gradient:linear-gradient(rgb(249, 168, 38, 0.9), rgb(249, 168, 38, 0.9));
+}

@@ -1,0 +1,129 @@
+@import url(./base.css);
+
+
+.footer {
+    background: var(--primary);
+    padding-top: 2.5rem;
+    padding-bottom: 0.95rem;
+    margin-top: 1.25rem;
+}
+
+.footer_logo h1 {
+    line-height: 1.4rem;
+}
+
+.footer_logo i {
+    color: var(--white-pure);
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: var(--white-pure);
+}
+
+.footer_logo h1 a span {
+    font-size: 1.5rem;
+    color: var(--white-pure);
+    font-weight: 500;
+}
+
+.footer_logo h1 a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer_logo_content {
+    color: var(--grey-soft);
+    margin-top: 0.95rem;
+    line-height: 1.88rem;
+}
+
+.quick_link {
+    border: none;
+    background: transparent;
+}
+
+.list-group-item {
+    text-decoration: none !important;
+    background: none !important;
+    border: 0 !important;
+}
+
+.list-group-item a {
+    color: var(--grey-soft);
+    text-decoration: none !important;
+    transition: 0.3s;
+}
+
+.list-group-item a:hover {
+    color: var(--secondary);
+}
+
+.footer_link_title {
+    color: var(--white-pure);
+}
+
+.office_info {
+    color: var(--grey-soft);
+    font-weight: 300;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    border-radius: 30px;
+    background: var(--primary);
+    border: 1px solid var(--grey-primary);
+    transition: 0.3s;
+}
+
+.newsletter:hover {
+    box-shadow: -1px 1px 5px 0 var(--grey-primary);
+}
+
+.newsletter input {
+    background: transparent;
+    color: var(--white-pure);
+    border: none;
+    outline: none;
+}
+
+.newsletter span i {
+    color: var(--white-pure);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter span i:hover {
+    color: var(--grey-soft);
+}
+
+.footer_bottom {
+    border-top: 1px solid var(--primary-dark);
+}
+
+@media screen and (max-width:768px) {
+    .footer_logo_content {
+        font-size: 0.9rem;
+    }
+
+    .quick_link , .office_info {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+
+    .footer_link_title {
+        font-size: 1rem;
+        margin-top: 1.88rem;
+    }
+
+    .footer_bottom p {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .footer {
+        padding: 2.5rem 0.95rem 0.95rem;
+    }
+}

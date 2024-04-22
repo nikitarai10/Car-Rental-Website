@@ -1,0 +1,52 @@
+@import url(./base.css);
+
+.section_about_subtitle {
+    color: var(--secondary);
+}
+
+.about_section_item {
+    column-gap: 3rem;
+}
+
+.about_section_item p i {
+    color: var(--secondary);
+    font-size: 1.1rem;
+}
+
+
+@media screen and (max-width:992px) {
+    .about_section {
+        margin-top: 200px !important;
+    }
+
+    .about_section_content h2 {
+        font-style: 1.4rem;
+    }
+
+    .about_section_item {
+        column-gap: 3rem;
+    }
+
+    .about_section_item p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .section_description i {
+        font-size: 0.8rem !important;
+    }
+}
+
+    @media only screen  and (max-width:768px) {
+        .about_img {
+            margin-top: 1.9rem;
+        }
+
+    }
+
+    @media screen and (max-width:576px) {
+        .about_section {
+            margin-top: 350px !important;
+            padding: 0 1rem;
+        }
+    }

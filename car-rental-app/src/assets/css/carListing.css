@@ -1,0 +1,51 @@
+@import url(./base.css);
+
+.car_range_input_field {
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.car_range_input_field::placeholder {
+    font-size: 0.9rem;
+}
+
+.car_range_input_wrapper {
+    border: 1px solid var(--grey-soft);
+    border-radius: 3px;
+    padding: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.car_range_input_wrapper:hover {
+    border: 1px solid var(--grey-primary);
+}
+
+.car_range_list {
+    position: absolute;
+    top: 28px;
+    width: 100%;
+    border: 1px solid var(--grey-soft);
+    background: var(--white-pure);
+    border-radius: 3px;
+}
+
+.car_range_list li {
+    padding: 0.4rem 0.2rem;
+    transition: 0.3s;
+    cursor: pointer;
+    border-bottom: 1px solid var(--grey-soft);
+}
+
+.car_range_list li:hover {
+    background: var(--secondary);
+    color: var(--white-pure);
+}
+
+
+@media screen and (max-width:576px) {
+    .carListing_section {
+        padding: 0 1rem;
+    }
+}

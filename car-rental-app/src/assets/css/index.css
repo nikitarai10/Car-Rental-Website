@@ -1,0 +1,88 @@
+/* -------google-font------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* ---------base css---------------- */
+@import url(./base.css);
+
+/* ----------------base-css----------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ---------------------predefine-css----------------- */
+h1,h2,h3,h4,h5,h6 {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0 !important;
+}
+
+h3,h4 {
+  font-size: 1.8rem;
+}
+
+h5,h6 {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+.section_title {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+.section_subtitle {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.section_description {
+  color: var(--grey-primary);
+  font-size: 0.95rem;
+  line-height: 1.88rem;
+}
+
+.btn {
+  padding: 0.44rem 0.95rem;
+  background: var(--primary);
+  color: var(--white-pure);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: var(--white-pure);
+  background: var(--primary);
+}
+
+
+@media only screen and (max-width:768px) {
+  section {
+    padding: 0.65rem 0;
+  }
+
+  .section_title {
+    font-size: 1.6rem;
+  }
+
+  .section_subtitle {
+    font-size: 1.1rem;
+  }
+
+  
+}
